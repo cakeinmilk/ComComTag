@@ -13,9 +13,12 @@ ComComTag is a lightweight, portable Windows application for standardizing MP3 t
 
 ## Distribution
 
-ComComTag is designed to be highly portable. When distributing or running the compiled `ComComTag.exe`, **you MUST include `TagLibSharp.dll` in the exact same directory alongside the executable.** The program requires this link library at runtime to natively read and write ID3 tags to the media wrappers.
+ComComTag is designed to be highly portable. However, it relies on two external components:
 
-No external Python software or `ffmpeg` path modification is required natively out of the box (the app will prompt users to locate their local `ffmpeg.exe` if they decide to build an M4B).
+1. **TagLibSharp.dll**: When distributing or running the compiled `ComComTag.exe`, **you MUST include `TagLibSharp.dll` in the exact same directory alongside the executable.** The program requires this link library at runtime to natively read and write ID3 tags to the media wrappers.
+2. **FFmpeg**: To build M4B Audiobooks, the end-user **MUST have `ffmpeg.exe` downloaded on their system**. The application will prompt the user to locate their `ffmpeg.exe` executable on their first M4B build attempt. (Available for free at [ffmpeg.org](https://ffmpeg.org/download.html)).
+
+No external Python software installation is required natively out of the box (as the downloader is embedded).
 
 ## Compilation Instructions
 
