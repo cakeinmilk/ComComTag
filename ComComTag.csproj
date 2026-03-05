@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TagLibSharp">
+      <HintPath>TagLibSharp.dll</HintPath>
+    </Reference>
+    <EmbeddedResource Include="icon.ico" />
+    <EmbeddedResource Include="dist\download_instagram.exe">
+      <LogicalName>download_instagram.exe</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
