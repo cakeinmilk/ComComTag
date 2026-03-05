@@ -29,11 +29,10 @@ namespace ComComTag {
             }
             DefaultDirectory = "";
             Locations = new List<string> {
-                "Bill Murray, Islington",
-                "Soho Theatre, Soho",
-                "Soho Theatre, Walthamstow",
-                "Pleasance, Islington",
-                "Up the Creek, Greenwich"
+                "Venue 1, City",
+                "Venue 2, City",
+                "Studio A",
+                "Main Stage"
             };
             FFmpegPath = "ffmpeg.exe";
             DefaultBitrate = "128k";
