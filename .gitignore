@@ -1,40 +1,28 @@
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+# Visual Studio / Build Outputs
+bin/
+obj/
+*.exe
+*.dll
+!TagLibSharp.dll
 
-# User-specific files
-*.rsuser
-*.suo
+# Test Binaries & Temp Artifacts
+tests/*.exe
+tests/*.png
+tests/*.tmp
+tests/*.*
+tests/
+*.tmp
+*.bak
+settings.ini
+build.bat
+
+# IDE & User Specific Files
+.vs/
 *.user
+*.suo
 *.userosscache
 *.sln.docstates
 
-# Executables
-*.exe
-*.dll
-*.pdb
-*.idb
-
-# Output from pyinstaller
-dist/
-build/
-*.spec
-
-# Settings
-settings.ini
-
-# App-specific overrides
-!TagLibSharp.dll
-!download_instagram.py
+# Optional: Release binaries are uploaded to GitHub Releases
+# If you want to track release zips/exes in git, uncomment the line below:
+# !Releases/

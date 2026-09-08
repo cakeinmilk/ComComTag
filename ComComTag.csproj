@@ -15,9 +15,6 @@
       <HintPath>TagLibSharp.dll</HintPath>
     </Reference>
     <EmbeddedResource Include="icon.ico" />
-    <EmbeddedResource Include="dist\download_instagram.exe">
-      <LogicalName>download_instagram.exe</LogicalName>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
